@@ -1,6 +1,23 @@
 /*css global, config global*/
+:root{
+    --branco: white;
+
+}
+
 *{
     margin: 0;
     padding: 0;
 }
-/*aqui colocar todas as config globais e obrigatorias, criar outro arquivo css para as outras paginas ou coisas, esse arquivo sempre estar linkado*/
+
+body {
+    background-color: var(--branco);
+}
+
+a {
+    text-decoration: none;
+    color: var(--branco);
+    border: 2px var(--branco) solid;
+    border-radius: 15px;
+    padding: 4px;
+    background-color: blueviolet;
+}

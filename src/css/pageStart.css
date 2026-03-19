@@ -1,0 +1,14 @@
+:root {
+    --roxo: #681b8b;
+   
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    border: 2px;
+    background-color: var(--roxo);
+    color: aliceblue;
+    padding: 10px;
+    font-family: Verdana;
+}
