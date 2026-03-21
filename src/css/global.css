@@ -1,23 +1,62 @@
 /*css global, config global*/
-:root{
-    --branco: white;
-
-}
-
 *{
     margin: 0;
     padding: 0;
 }
 
-body {
-    background-color: var(--branco);
+:root{
+    --branco: white;
+
 }
 
-a {
-    text-decoration: none;
+body {
+    background-color: var(--branco);
+    font-family: Verdana;
+}
+
+button {
     color: var(--branco);
     border: 2px var(--branco) solid;
     border-radius: 15px;
-    padding: 4px;
+    padding: 5px 15px;
     background-color: blueviolet;
 }
+
+input{
+    background: none;
+    padding: 4px 29px;
+    border: 2px solid white;
+    border-radius: 14px;
+    margin: 10px;
+    color: white;
+}
+/*animação da linha sublinhando o texto*/
+a{
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+a::after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+a:hover::after{
+    animation: linhaHover 0.4s ease-in-out forwards;
+}
+
+@keyframes linhaHover{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+

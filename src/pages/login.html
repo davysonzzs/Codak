@@ -3,22 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/loginPage.css">
     <title>Login: codak</title>
 </head>
 <body>
-    <div class="Login">
-        <h1>Login</h1>
+    <div class="login">
+        <div class="loginFilho">
+        <h1 id="titulo">Login</h1>
         <form>
             <label>Email</label> <br>
-            <input type="email" id=""> <br>
+            <input type="email" id="email"> <br>
             <label>Senha</label> <br>
-            <input type="password" id=""> <br>
+            <input type="password" id="senha"> <br>
         </form>
-        <footer class="fundo">
-            <p>não tem conta?</p>
-            <a onclick="">Crie</a>
-        </footer>
+        <!--auth do login e cadastro-->
+        <button onclick="authLogin()" id="btnLogin">logar</button>
+        <div class="fundo">
+            <p id="nConta">não tem conta?</p>
+            <a onclick="cadastroAuth()" id="aConta">Crie</a>
+        </div>
+        </div>
     </div>
+
+    <script src="../js/login.js"></script>
 </body>
 </html>

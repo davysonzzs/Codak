@@ -1,0 +1,28 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.loginFilho{
+    background-color:#681b8b;
+    padding: 35px;
+    text-align: center;
+    color: white;
+    border-radius: 25px;
+}
+
+form{
+    margin: 25px;
+    text-align: left;
+}
+
+.fundo{
+    margin: 10px;
+    padding: 9px;
+}
+
+
+
