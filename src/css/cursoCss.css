@@ -1,6 +1,8 @@
 .conteudo{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .Principal img{
@@ -16,3 +18,42 @@
     margin: 5px 0;
     font-size: 19px;
 }
+
+.Principal button{
+    margin: 30px 0;
+}
+
+.formulario{
+    padding: 20px;
+}
+
+form{
+    background-color: #681b8b;
+    border-radius: 20px;
+    margin: 20px 0;
+    padding: 70px 40px;
+}
+
+label{
+    color: white;
+    font-size: 25px;
+}
+
+select{
+    background: none;
+    border: 2px solid #fafafa;
+    margin: 20px 0;
+    padding: 5px 8px;
+    border-radius: 12px;
+    color: #fafafa;
+}
+
+input{
+    background: none;
+    padding: 4px 29px;
+    border: 2px solid white;
+    border-radius: 14px;
+    margin: 10px;
+    color: white;
+}
+

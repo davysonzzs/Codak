@@ -21,15 +21,6 @@ button {
     padding: 5px 15px;
     background-color: blueviolet;
 }
-
-input{
-    background: none;
-    padding: 4px 29px;
-    border: 2px solid white;
-    border-radius: 14px;
-    margin: 10px;
-    color: white;
-}
 /*animação da linha sublinhando o texto*/
 a{
     text-decoration: none;
@@ -49,14 +40,5 @@ a::after{
 
 a:hover::after{
     animation: linhaHover 0.4s ease-in-out forwards;
-}
-
-@keyframes linhaHover{
-    from{
-        width: 0%;
-    }
-    to{
-        width: 100%;
-    }
 }
 

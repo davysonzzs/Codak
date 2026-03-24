@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../css/global.css">
     <link rel="stylesheet" href="../../css/cursoCss.css">
     <!--JS-->
-    <link rel="stylesheet" href="../../js/script.js">
+    <script src="../../js/script.js"></script>
     
     <title>Curso: css</title>
 </head>
@@ -19,7 +19,24 @@
             <p>é a linguagem utilizada para estilizar e definir o visual de documentos HTML. <br>
                 Ela controla cores, fontes, tamanhos, espaçamentos e layouts, <br> permitindo criar designs profissionais e responsivos para diferentes dispositivos. <br>
                 CSS separa o conteúdo (HTML) da apresentação (CSS), facilitando  <br> a manutenção e agilizando o carregamento</p>
-            <button>Aprender</button>
+            <button onclick="abrirForm('forms')">Aprender</button>
+        </div>
+        <div class="formulario" id="forms" style="display: none;">
+            <form>
+                <label>metodologia</label> <br>
+                <select id="metedologia">
+                    <option value="1">Ativa</option>
+                    <option value="2">Construtiva</option>
+                </select> <br>
+                <label>professores</label> <br>
+                <select id="professores">
+                    <option value="davyson">davyson</option>
+                    <option value="manel">manel</option>
+                </select> <br>
+                <label>Tempo Disponivel</label> <br>
+                <input type="datetime" id="tempoDisponivel"> <br>
+                <input type="submit" value="aprender" id="enviar">
+            </form>
         </div>
     </div>
 </body>

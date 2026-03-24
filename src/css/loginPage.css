@@ -24,5 +24,12 @@ form{
     padding: 9px;
 }
 
-
+input{
+    background: none;
+    padding: 4px 29px;
+    border: 2px solid white;
+    border-radius: 14px;
+    margin: 10px;
+    color: white;
+}
 
