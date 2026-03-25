@@ -2,12 +2,80 @@
     --roxo: #681b8b;
    
 }
-
+.body {
+    background-image: url("../imgs/fundo.png");
+    background-size: cover;
+}
+.body ::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(71, 20, 82, 0.142);
+    z-index: -1;
+}
 .navBar {
     display: flex;
     justify-content: space-between;
-    border: 2px;
+    border: 2px solid var(--roxo);
     background-color: var(--roxo);
     color: aliceblue;
     padding: 10px;
+}
+
+.imagemCodak {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.imagemCodak:hover {
+  filter: brightness(120%);
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+.descCodak {
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    animation: subindo 3s ease;
+}
+.textPrincipal {
+    font-size: 20px;
+}
+.textAdicional {
+    margin: 40px auto;
+    font-size: 15px;
+    font-weight: 400;
+    border: 2px var(--roxo) solid;
+    width: 300px;
+    border-radius: 10px;
+    background-color: var(--roxo);
+    color: white;
+}
+p {
+    margin-top: 5px;
+}
+@keyframes subindo {
+    from {
+        opacity: 0;
+        margin-top: 120px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 100;
+    }
+}
+.insta {
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    font-weight: 100;
+}
+.instaLogo {
+    margin-top: 10px;
+    width: 30px;
 }
