@@ -21,6 +21,10 @@ button {
     padding: 5px 15px;
     background-color: blueviolet;
 }
+button :hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
 /*animação da linha sublinhando o texto*/
 a{
     text-decoration: none;
@@ -41,4 +45,3 @@ a::after{
 a:hover::after{
     animation: linhaHover 0.4s ease-in-out forwards;
 }
-
