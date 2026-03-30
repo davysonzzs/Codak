@@ -224,18 +224,22 @@ const js = {
 const html = {
     stage1: [
         `
-        O que é HTML?
+        <h1 onclick="abrirForm('stage1html')" style="cursor: pointer;">Stage 1: introdução</h1>
+        <h2>O que é HTML?</h2>
+        <span id="stage1html" style="display: none; margin: 15px 0>
 
-        HTML significa Hyper Text Markup Language (Linguagem de Marcação de Hipertexto).
-        HTML é a linguagem de marcação padrão para a criação de páginas web.
-        HTML descreve a estrutura de uma página da Web.
-        O HTML consiste em uma série de elementos.
-        Os elementos HTML informam ao navegador como exibir o conteúdo.
-        Os elementos HTML rotulam partes do conteúdo, como "isto é um título", "isto" é um parágrafo”, "isto é um link", etc.
+        HTML significa Hyper Text Markup Language (Linguagem de Marcação de Hipertexto). <br>
+        HTML é a linguagem de marcação padrão para a criação de páginas web. <br>
+        HTML descreve a estrutura de uma página da Web.<br>
+        O HTML consiste em uma série de elementos.<br>
+        Os elementos HTML informam ao navegador como exibir o conteúdo.<br>
+        Os elementos HTML rotulam partes do conteúdo, como "isto é um título", "isto" é um parágrafo”, "isto é um link", etc.<br>
 
-        Um documento HTML simples
+        Um documento HTML simples<br>
 
-        Exemplo
+        Exemplo<br>
+        <pre>
+        <code>
         <!DOCTYPE html>
         <html>
         <head>
@@ -256,54 +260,83 @@ const html = {
         O <body>O elemento define o O corpo do documento é um contêiner para todo o conteúdo visível, como: Títulos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.
         O <h1>O elemento define um título grande.
         O <p>O elemento define um parágrafo.
+        </code>
+        </pre> <br>
+        <h2>O que é um elemento HTML?<h2><br>
 
-        O que é um elemento HTML?
-
-        Um elemento HTML é definido por uma tag de abertura, algum conteúdo e uma tag de fechamento:
+        Um elemento HTML é definido por uma tag de abertura, algum conteúdo e uma tag de fechamento: <br>
+        <pre>
+        <code>
         < tagname > O conteúdo vai aqui... </tagname>
+        </code>
+        </pre><br>
 
-        O elemento HTML abrange tudo desde a tag de abertura até a tag de fechamento:
+        O elemento HTML abrange tudo desde a tag de abertura até a tag de fechamento:<br>
+        <pre>
+        <code>
         < h1 > Meu Primeiro título</h1> 
         <p> Meu primeiro parágrafo </p> 
-        `, "Link para documentação: https://www.w3schools.com/html/html_intro.asp", "Exercicio disponivel: https://pt.anotepad.com/note/read/qwsai3wp", 480000],
+        <code>
+        <pre>
+        </span>
+        `, `<a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">Documentação</a><br>`, `<a href="https://pt.anotepad.com/note/read/qwsai3wp" target="_blank">Exercicio</a><br>`],
         stage2: [
             `
-            Títulos HTML
+            <h1 onclick="abrirForm('stage2html')" style="cursor: pointer;">Stage 1: Basico</h1>
+            <span id="stage2html" style="display: none; margin: 15px 0>
+            <h2>Títulos HTML<h2><br>
 
-            Os cabeçalhos HTML são definidos com o <h1> para <h6>etiquetas.
-            <h1>define o título mais importante. <h6>define o menos importante cabeçalho:
+            Os cabeçalhos HTML são definidos com o <pre><code><h1></pre></code> para <pre><code><h6></code></pre>etiquetas.<br>
+            h1 define o título mais importante. h6 define o menos importante cabeçalho:<br>
 
-            Exemplo
+            Exemplo<br>
+            <pre>
+            <code>
             <h1>Eu sou um Titulo</h1>
             <h2>Eu sou um subTitulo</h2>
-            <h3>Eu sou um texto-menorzinho</h3> 
+            <h3>Eu sou um texto-menorzinho</h3>
+            </code>
+            </pre><br>
 
-            Parágrafos HTML
+            <h2>Parágrafos HTML</h2><br>
 
-            Os parágrafos HTML são definidos com o <p> marcação:
+            Os parágrafos HTML são definidos com o <p> marcação:<br>
 
-            Exemplo
+            Exemplo<br>
+            <pre>
+            <code>
             <p>Eu sou um Paragrafo</p>
             <p>Eu sou outro Paragrafo</p>
+            </code>
+            </pre><br>
             
-            Links HTML
+            <h2>Links HTML<h2><br>
 
-            Os links HTML são definidos com o <a> marcação:
+            Os links HTML são definidos com o <a> marcação:<br>
 
-            Exemplo
+            Exemplo<br>
+            <pre>
+            <code>
             <a href="#">isso é um link</a>
-            O destino do link é especificado no href.
-            Os atributos são usados para fornecer informações adicionais sobre elementos HTML.
-            Você aprenderá mais sobre atributos mais para frente
+            </code>
+            </pre><br>
+            O destino do link é especificado no href.<br>
+            Os atributos são usados para fornecer informações adicionais sobre elementos HTML.<br>
+            Você aprenderá mais sobre atributos mais para frente<br>
 
-            Imagens HTML
+            <h2>Imagens HTML</h2>
 
-            As imagens HTML são definidas com o <img> marcação.
-            O arquivo de origem ( src), texto alternativo ( alt), width, e heightsão fornecidos como atributos:
+            As imagens HTML são definidas com o img marcação.<br>
+            O arquivo de origem ( src), texto alternativo ( alt), width, e heightsão fornecidos como atributos:<br>
 
-            Exemplo
+            Exemplo<br>
+            <pre>
+            <code>
             <img src="Codak.jpg" alt="Codak-logo" width="104" height="142"> 
-            `, "link para documentação: https://www.w3schools.com/html/html_basic.asp", "Exercicio disponivel: https://pt.anotepad.com/note/read/p2qqs34x", 600000]
+            </code>
+            </pre>
+            </span>
+            `, `<a href="https://www.w3schools.com/html/html_basic.asp" target="_blank">Documentação</a><br>`, `<a href="https://pt.anotepad.com/note/read/p2qqs34x" target="_blank">Exercicio</a><br>`]
 
 }
 //os stages são um obj, na chave ha um array onde [0] é o descrição onde o aluno vai ler, [1] link pra documentação, [2] o exercicio e o [3] o tempo exigido para aql stage
@@ -311,13 +344,13 @@ const html = {
 const professores = {
     davyson:{
         css:['<a href="https://youtu.be/aWzKb071D9o?si=Lu_aE598asHqruW0" target="_blank">Video aula</a>'],
-        js:["https://youtu.be/T4P_BQdWtRg?si=PhK2eukZHBLHi0l5"],
-        html:["https://youtu.be/kOz4ynZs_KY?si=de9lPf8_2L04pUz0"]
+        js:['<a href="https://youtu.be/T4P_BQdWtRg?si=PhK2eukZHBLHi0l5" target="_blank">VIdeo aula</a>'],
+        html:['<a href="https://youtu.be/kOz4ynZs_KY?si=de9lPf8_2L04pUz0" target="_blank">Video aula</a>']
     },
     manel:{
         css:['<a href="https://youtu.be/dQw4w9WgXcQ?si=MuBaGnTjJl1TeZ0q" target="_blank">Video aula</a>'],
-        js:["https://youtu.be/jjpYAZXRGtw?si=QDJnZoruYOXm6L4Q"],
-        html:["https://youtu.be/nGeBJsA67sg?si=uNUIhRXgkkeraEon"]
+        js:['<a href="https://youtu.be/jjpYAZXRGtw?si=QDJnZoruYOXm6L4Q" target="_blank">Video aula</a>'],
+        html:['<a href="https://youtu.be/nGeBJsA67sg?si=uNUIhRXgkkeraEon" target="_blank">Video aula</a>']
     }
 }
 
@@ -348,7 +381,7 @@ function criarGuia(curso){
     let cursoFormatado = mapaDeCursos[curso]
     Object.values(cursoFormatado).forEach(conteudo => {
         conteudo.forEach(item =>{
-            conteudoDosStages += `${item}`
+            conteudoDosStages += `${item} ${professorFormatado[curso]} `
         })
     })
     console.log(conteudoDosStages)
@@ -357,6 +390,7 @@ function criarGuia(curso){
     guiaMostrar.scrollIntoView({
         behavior: "smooth"
     })
+    cronometro(tempoDisponivelParaEstudo)
 }
 
 let ms
@@ -374,7 +408,7 @@ function cronometroDiplay(){
     const hDisplay = horas < 10 ? '0' + horas : horas
     const mDisplay = minutosTotais < 10 ? '0' + minutosTotais : minutosTotais
     const sDisplay = segundosTotais < 10 ? '0' + segundosTotais : segundosTotais
-    document.getElementById('div').innerHTML = `${hDisplay}:${mDisplay}:${sDisplay} <br> <button onclick="iniciar()">iniciar</button> <button onclick="finalizar()">finalizar estudo</button>`
+    document.getElementById('divTempo').innerHTML = `${hDisplay}:${mDisplay}:${sDisplay} <br> <button onclick="iniciar()">iniciar</button> <button onclick="finalizar()">finalizar estudo</button>`
 }
 
 function iniciar() {

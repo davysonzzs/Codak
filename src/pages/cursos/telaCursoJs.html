@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/cursoCss.css">
+    <link rel="stylesheet" href="../../css/global.css">
     <title>Curso: js</title>
+    <script src="../../js/script.js" defer></script>
+    <script src="../../js/criadorGuia.js" defer></script>
 </head>
 <body>
-    <!--tela do curso-->
+    <div class="conteudo">
+        <div class="Principal">
+            <!--add img dps-->
+            <img src="#" alt="imagem do curso de js">
+            <h1>Curso de JavaScript</h1>
+            <p>JavaScript (JS) é uma linguagem de programação leve, interpretada e orientada a objetos, essencial para criar interatividade em páginas web.<br>
+                 Ao lado de HTML e CSS, o JS compõe o "bolo" das tecnologias web, permitindo atualizações dinâmicas de conteúdo, <br>
+                 animações e manipulação de mídia diretamente no navegador do cliente</p>
+            <button onclick="abrirForm('forms')" id="btnForms">Aprender</button>
+        </div>
+        <div class="formulario" id="forms" style="display: none;">
+            <form>
+                <label>metodologia</label> <br>
+                <select id="metedologia">
+                    <option value="1">Ativa</option>
+                    <option value="2">Construtiva</option>
+                </select> <br>
+                <label>professores</label> <br>
+                <select id="professores">
+                    <option value="davyson">davyson</option>
+                    <option value="manel">manel</option>
+                </select> <br>
+                <label>Tempo Disponivel</label> <br>
+                <input type="datetime" id="tempoDisponivel"> <br>
+                <input type="submit" value="aprender" id="enviar" onclick="criarGuia('html')">
+            </form>
+        </div>
+        <div id="divTempo">
+            
+        </div>
+        <div id="div">
+
+        </div>
+    </div>
 </body>
 </html>
