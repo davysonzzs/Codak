@@ -124,8 +124,8 @@ const js = {
     Stage2:[
         `
         <h1 onclick="abrirForm('stage2js')" style="cursor: pointer;">Stage 2: Sintaxe</h1> <br>
-        <span id="stage2js" style="display: none; margin: 15px 0>
-        <h2>Regras de sintaxe<h2> <br>
+        <span id="stage2js" style="display: none; margin: 15px 0">
+        <h2>Regras de sintaxe</h2> <br>
         A sintaxe são as regras que definem como os programas devem ser construídos: <br>
         <pre>
         <code>
@@ -187,8 +187,8 @@ const js = {
         Variáveis ​​são contêineres para armazenar valores de dados .<br>
 
         As variáveis ​​devem ser identificadas com nomes únicos .<br>
-        <pre>
-        <code>
+        </code>
+        </pre>
         Exemplo<br>
         <pre>
         <code>
@@ -216,8 +216,8 @@ const js = {
         Exemplo
         5 * 10
         </code>
-        </pre>
-        </span>
+        </pre> <br>
+        </span> 
         `, '<a href="https://www.w3schools.com/js/js_syntax.asp"  target="_blank">documentação</a><br>', '<a href="https://pt.anotepad.com/note/read/t237ic9d"  target="_blank">Exercicio</a><br>']
 }
 
@@ -225,44 +225,45 @@ const html = {
     stage1: [
         `
         <h1 onclick="abrirForm('stage1html')" style="cursor: pointer;">Stage 1: introdução</h1>
-        <h2>O que é HTML?</h2>
-        <span id="stage1html" style="display: none; margin: 15px 0>
+        <span id="stage1html" style="display: none; margin: 15px 0;">
+        <h2>O que é html?</h2> <br>
 
-        HTML significa Hyper Text Markup Language (Linguagem de Marcação de Hipertexto). <br>
-        HTML é a linguagem de marcação padrão para a criação de páginas web. <br>
-        HTML descreve a estrutura de uma página da Web.<br>
-        O HTML consiste em uma série de elementos.<br>
-        Os elementos HTML informam ao navegador como exibir o conteúdo.<br>
-        Os elementos HTML rotulam partes do conteúdo, como "isto é um título", "isto" é um parágrafo”, "isto é um link", etc.<br>
+        html significa Hyper Text Markup Language (Linguagem de Marcação de Hipertexto). <br>
+        html é a linguagem de marcação padrão para a criação de páginas web. <br>
+        html descreve a estrutura de uma página da Web.<br>
+        O html consiste em uma série de elementos.<br>
+        Os elementos html informam ao navegador como exibir o conteúdo.<br>
+        Os elementos html rotulam partes do conteúdo, como "isto é um título", "isto" é um parágrafo”, "isto é um link", etc.<br>
 
-        Um documento HTML simples<br>
+        Um documento html simples<br>
 
-        Exemplo<br>
+        Exemplo <br>
         <pre>
-        <code>
-        <!DOCTYPE html>
-        <html>
-        <head>
-        <title>Page Title</title>
-        </head>
-        <body>
+        <code> <br>
 
-        <h1>My First Heading</h1>
-        <p>My first paragraph.</p>
+         !DOCTYPE html
+        html
+        head
+        title Page Title title
+        /head
+        body
 
-        </body>
-        </html> 
+        h1 My First Heading /h1
+        p My first paragraph. /p
 
-        O <!DOCTYPE html>declaração define que este documento é um documento HTML5
-        O <html>O elemento raiz é o elemento raiz de um HTML. página
-        O <head>O elemento contém metadados sobre o Página HTML
-        O <title>O elemento especifica um título para o Página HTML (que é exibida na barra de título do navegador ou na aba da página)
-        O <body>O elemento define o O corpo do documento é um contêiner para todo o conteúdo visível, como: Títulos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.
-        O <h1>O elemento define um título grande.
-        O <p>O elemento define um parágrafo.
+        /body
+        /html 
+
+        O !DOCTYPE html declaração define que este documento é um documento HTML5
+        O html O elemento raiz é o elemento raiz de um HTML. página
+        O head O elemento contém metadados sobre o Página HTML
+        O title O elemento especifica um título para o Página HTML (que é exibida na barra de título do navegador ou na aba da página)
+        O body O elemento define o O corpo do documento é um contêiner para todo o conteúdo visível, como: Títulos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.
+        O  h1 O elemento define um título grande.
+        O  p O elemento define um parágrafo.
         </code>
         </pre> <br>
-        <h2>O que é um elemento HTML?<h2><br>
+        <h2>O que é um elemento HTML?</h2><br>
 
         Um elemento HTML é definido por uma tag de abertura, algum conteúdo e uma tag de fechamento: <br>
         <pre>
@@ -274,50 +275,50 @@ const html = {
         O elemento HTML abrange tudo desde a tag de abertura até a tag de fechamento:<br>
         <pre>
         <code>
-        < h1 > Meu Primeiro título</h1> 
-        <p> Meu primeiro parágrafo </p> 
-        <code>
-        <pre>
+         h1  Meu Primeiro título /h1  
+        p Meu primeiro parágrafo /p 
+        </code>
+        </pre>
         </span>
         `, `<a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">Documentação</a><br>`, `<a href="https://pt.anotepad.com/note/read/qwsai3wp" target="_blank">Exercicio</a><br>`],
         stage2: [
             `
-            <h1 onclick="abrirForm('stage2html')" style="cursor: pointer;">Stage 1: Basico</h1>
-            <span id="stage2html" style="display: none; margin: 15px 0>
-            <h2>Títulos HTML<h2><br>
+            <h1 onclick="abrirForm('stage2html')" style="cursor: pointer;">Stage 2: Basico</h1>
+            <span id="stage2html" style="display: none; margin: 15px 0">
+            <h2>Títulos HTML</h2><br>
 
-            Os cabeçalhos HTML são definidos com o <pre><code><h1></pre></code> para <pre><code><h6></code></pre>etiquetas.<br>
+            Os cabeçalhos HTML são definidos com o <pre><code> h1 </pre></code> para <pre><code> h6 </code></pre>etiquetas.<br>
             h1 define o título mais importante. h6 define o menos importante cabeçalho:<br>
 
             Exemplo<br>
             <pre>
             <code>
-            <h1>Eu sou um Titulo</h1>
-            <h2>Eu sou um subTitulo</h2>
-            <h3>Eu sou um texto-menorzinho</h3>
+             h1 Eu sou um Titulo /h1
+             h2 Eu sou um subTitulo /h2
+             h3 Eu sou um texto-menorzinho /h3
             </code>
             </pre><br>
 
             <h2>Parágrafos HTML</h2><br>
 
-            Os parágrafos HTML são definidos com o <p> marcação:<br>
+            Os parágrafos HTML são definidos com o p marcação:<br>
 
             Exemplo<br>
             <pre>
             <code>
-            <p>Eu sou um Paragrafo</p>
-            <p>Eu sou outro Paragrafo</p>
+            p Eu sou um Paragrafo /p
+            p Eu sou outro Paragrafo /p
             </code>
             </pre><br>
             
-            <h2>Links HTML<h2><br>
+            <h2>Links HTML</h2><br>
 
-            Os links HTML são definidos com o <a> marcação:<br>
+            Os links HTML são definidos com o a marcação:<br>
 
             Exemplo<br>
             <pre>
             <code>
-            <a href="#">isso é um link</a>
+            a href="#" isso é um link /a
             </code>
             </pre><br>
             O destino do link é especificado no href.<br>
@@ -332,7 +333,7 @@ const html = {
             Exemplo<br>
             <pre>
             <code>
-            <img src="Codak.jpg" alt="Codak-logo" width="104" height="142"> 
+            img src="Codak.jpg" alt="Codak-logo" width="104" height="142" 
             </code>
             </pre>
             </span>
@@ -365,10 +366,20 @@ function criarGuia(curso){
     let tempoDisponivelParaEstudo = document.getElementById('tempoDisponivel').value
     let tempoTest = tempoDisponivelParaEstudo.split("")
     if(tempoTest.includes("m") || tempoTest.includes("minutos") || tempoTest.includes("minuto") || tempoTest.includes("min")){
-        tempoTest.length = 1  
+        if(tempoTest.includes("0")){
+            tempoTest.length = 2
+            tempoTest = Number(tempoTest.join(""))
+        }else{
+            tempoTest.length = 1
+        }  
         tempoDisponivelParaEstudo = tempoTest * 60
     } else if(tempoTest.includes("h") || tempoTest.includes("horas") || tempoTest.includes("hora") || tempoTest.includes("hrs")){
-        tempoTest.length = 1
+        if(tempoTest.includes("0")){
+            tempoTest = Number(tempoTest.join(""))
+            tempoTest.length = 2
+        }else{
+            tempoTest.length = 1
+        }
         tempoDisponivelParaEstudo = tempoTest * 3600
     } else if(tempoTest.includes("s") || tempoTest.includes("segundos") || tempoTest.includes("segundo") || tempoTest.includes("segs")){
         tempoDisponivelParaEstudo = tempoDisponivelParaEstudo
@@ -388,7 +399,7 @@ function criarGuia(curso){
     let cursoFormatado = mapaDeCursos[curso]
     Object.values(cursoFormatado).forEach(conteudo => {
         conteudo.forEach(item =>{
-            conteudoDosStages += `${item} ${professorFormatado[curso]} `
+            conteudoDosStages += `${item} `
         })
     })
     guiaMostrar.innerHTML = conteudoDosStages
