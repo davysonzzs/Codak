@@ -358,33 +358,39 @@ function criarGuia(curso){
     //somente para não recarregar a pagina
     document.querySelector("form").addEventListener('submit', (event) =>{
         event.preventDefault()
-        console.log("Envio feito")
     })
     //montar guia com base nas const a seguir
     const metodologia = document.getElementById("metedologia").value
     const professor = document.getElementById("professores").value
-    const tempoDisponivelParaEstudo = document.getElementById('tempoDisponivel').value
-    let tempoDisponivelCorventido = tempoDisponivelParaEstudo % 60
+    let tempoDisponivelParaEstudo = document.getElementById('tempoDisponivel').value
+    let tempoTest = tempoDisponivelParaEstudo.split("")
+    if(tempoTest.includes("m") || tempoTest.includes("minutos") || tempoTest.includes("minuto") || tempoTest.includes("min")){
+        tempoTest.length = 1  
+        tempoDisponivelParaEstudo = tempoTest * 60
+    } else if(tempoTest.includes("h") || tempoTest.includes("horas") || tempoTest.includes("hora") || tempoTest.includes("hrs")){
+        tempoTest.length = 1
+        tempoDisponivelParaEstudo = tempoTest * 3600
+    } else if(tempoTest.includes("s") || tempoTest.includes("segundos") || tempoTest.includes("segundo") || tempoTest.includes("segs")){
+        tempoDisponivelParaEstudo = tempoDisponivelParaEstudo
+    } else{
+        alert("especifique qual o tipo de tempo, horas ou minutos ou segundos")
+        return
+    }
 
     //Exibir guia
     let mapaDeCursos = { css, html, js}  // ajuda abuscar os objs com o parametro
 
     const divResultado = document.getElementById('div')
-    const cronometroPagina = document.createElement("div")
-    cronometroPagina.setAttribute("class", "cronometro")
     const guiaMostrar = document.createElement("div")
     guiaMostrar.setAttribute("class", "guia")
     let conteudoDosStages = ""
     let professorFormatado = professores[professor]
-    console.log(professor)
-    console.log(professorFormatado[curso])
     let cursoFormatado = mapaDeCursos[curso]
     Object.values(cursoFormatado).forEach(conteudo => {
         conteudo.forEach(item =>{
             conteudoDosStages += `${item} ${professorFormatado[curso]} `
         })
     })
-    console.log(conteudoDosStages)
     guiaMostrar.innerHTML = conteudoDosStages
     divResultado.appendChild(guiaMostrar)
     guiaMostrar.scrollIntoView({
