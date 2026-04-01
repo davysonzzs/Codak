@@ -29,8 +29,6 @@ criar um rotina de estudo/guia para auxiliar no estudo
 *logica do requisito*: fechada <br>
 - ~~sistema registrar e guardas os ex concluidos por usuario~~ <br>
 *logica do requisito*: fechado <br>
-- o sistema calcula os pontos para adicionar no ranking <br>
-*logica do requisito*: (add dps)
 - o sistema deve rodar um carrossel de videos na aba de conteudos <br>
 *logica do requisito*: (add dps)
 
