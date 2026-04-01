@@ -375,8 +375,8 @@ function criarGuia(curso){
         tempoDisponivelParaEstudo = tempoTest * 60
     } else if(tempoTest.includes("h") || tempoTest.includes("horas") || tempoTest.includes("hora") || tempoTest.includes("hrs")){
         if(tempoTest.includes("0")){
-            tempoTest = Number(tempoTest.join(""))
             tempoTest.length = 2
+            tempoTest = Number(tempoTest.join(""))
         }else{
             tempoTest.length = 1
         }
