@@ -1,0 +1,65 @@
+.barraPesquisa:hover {
+    transform: scale(1.1);
+}
+img:hover {
+    transform: scale(1.05);
+}
+.inicial {
+    background-color: #681b8b;
+}
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.barraPesquisa {
+    border-radius: 10px;
+    padding: 0 30px;
+    transition: transform 0.5s ease;
+}
+a {
+    text-decoration: none;
+    color: aliceblue;
+    border: 2px white solid;
+    border-radius: 10px;
+    text-align: center;
+}
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.video1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+img {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.8s ease;
+    margin-bottom: 10px;
+}
+.titulo {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+.detalhes {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: aliceblue;
+}
+.pai {
+    background-color: #390c4d;
+    margin: auto 200px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    
+}
