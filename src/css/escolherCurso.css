@@ -1,0 +1,29 @@
+body {
+    background-color: #681b8b;
+}
+img {
+    width: 400px;
+}
+.cursos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.imagens {
+    display: flex;
+    flex-direction: column;
+}
+a {
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
